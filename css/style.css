@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+li,p{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+
+}
+.navbar a{
+    padding-bottom: 0.4rem;
+}
+.navbar a:link
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+/* ############################## utility classes ########################## */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.md-heading{
+    font-size: 2.2rem;
+
+}
+.lg-heading{
+    font-size: 2.5rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+.text-gray{
+    color: #555555;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: #f4f4f4;
+    border-radius: 10em;
+    
+    }
+
+    .btn-primary:hover{
+        background-color: #ddd;
+    }
+        
+.btn-secondry{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+
+}
+.btn-secondry:hover{
+    background-color: #fcf3f2;
+}
+
+.header{
+
+    position: relative;
+    
+    height: 95vh;
+   
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../img/1.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+
+}
+img{
+    display: inline;
+    width: 10%;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ######################header content style############ */
+.header-contant{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+}
+.header h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header p{
+    text-transform: uppercase;
+}
+
+/* ###################### Showcase styling ################# */
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.315);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .text-box, .row2 .img-box{
+    float: right;
+    width: 50%;
+}
+
+.row2 .text-box, .row1 .img-box{
+    float: left;
+    width: 50%;
+}
+
+.img-box{
+    height: 100%;
+}
+
+.text-box{
+    padding: 3rem;
+
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+
+}
+/* .text-box p{
+    background: linear-gradient(rgba(0,0,0,.), rgba(0,0,0,.2));
+}
+ */
+ .row::after{
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+/* ################ features section styling ####################### */
+
+ .features{
+     background: linear-gradient(rgba(39, 81, 134, 0.3),rgba(39, 81, 134, 0.3));
+ }
+
+ .box-wraper{
+     height: 500px;
+     color: #fff;
+     padding-bottom: 10rem;
+
+ }
+
+ .features .box2{
+     border-left: 2px solid #fff;
+     float: right;
+     padding: 10px;
+     width: 50%;
+     height: 100%;
+     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../img/8.jpeg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+     
+     
+
+ }
+ .features .box1{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../img/2.jpeg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+
+}
+
+.features h3,p{
+    text-align: center;
+    /* padding-top: 7rem; */
+    
+}
+.features h3{
+    padding-top: 18rem;
+}
+.box-wraper p,h3{
+    text-transform: uppercase;
+
+}
+.box-wraper::after{
+    content: "";
+    display: block;
+    clear: both;
+
+
+}
+
+/* #################### love section styling######################## */
+.love{
+    padding-bottom: 10rem;
+}
+.main-box{
+    box-shadow: 5px,5px,20px,0px #000;
+    
+    
+}
+.isk{
+    width: 33.3333333%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.love-box1, .love-box3{
+    background-color: #263238;
+    color: #fff;
+}
+.love-box2{
+    background-color: #ff5e62;
+    color: #fff;
+}
+
+
+.main-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ############################footer styling############################# */
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-midia-links i{
+    margin: 2rem;
+}
+
+/*############### about page header and navbar styling ############### */
+
+
+.all{
+    background: #ddd
+}
+.about-header{
+
+    height: 95vh;
+    background-color: #ddd;
+   
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../img/3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-contant h1,p{
+    text-transform: uppercase;
+
+}
+.about-row{
+    height: 400px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
+.about .box-img{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.about .about-row img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+
+}
+.about .box-text{
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+    float: left;
+}
+    
+.about-row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-heading::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+    width: 98%;
+
+}
+.about ul{
+    text-align: center;
+}
+.about .box-text li::before{
+    content: "\2713";
+    padding-right: 20px;
+    color: #e63946;
+    font-weight: bold;
+
+}
+.about{
+    background-color: #fff;
+    
+}
+
+/* ########################## count items styling ######################### */
+.counts{
+    /* padding-bottom: 10rem; */
+    background: #ddd;
+    
+
+}
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.count-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+
+}
+.count-item h1{
+    color: #555;
+}
+/* #################### banner stylling ################### */
+.cta-banner{
+    background: #ff5e62;;
+    text-align: center;
+    padding: 0.9rem;
+    margin-bottom: 2rem ;
+    color: #f4f4f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+
+    
+     
+}
+.cta-banner-left{
+    width: 60%;
+    float: left;
+    
+}
+.cta-banner-right{
+    width: 40%;
+    float: right;
+}
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.cta-line{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.btn-cta{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.3em;
+    color: #f4f4f4;
+    box-shadow: 5px 5px 10px #000;
+
+}
+.btn-cta:hover{
+    color:rgb(30, 230, 107);
+
+}
+
+
+/* ##################### Relationship page Styling ###################### */
+.relationship-nav{
+    background: rgba(214, 186, 190, 0.452)
+}
+.rel-header{
+    position: relative;
+    height: 75vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/9.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10rem;
+    
+}
+.rel-header-content{
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    top: 50%;
+    left: 75%; 
+    transform: translate(-50%, -50%);
+}
+.rel-header-content h1{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.middle{
+    /* background:rgba(145, 86, 145, 0.726); */
+    margin-bottom: 10rem;
+}
+.rel-row{
+    height: 55vh;
+    /* background:rgba(219, 46, 219, 0.726); */
+}
+.rel-box-img{
+    width: 50%;
+    height: 100%;
+    float: right;
+    
+}
+.rel-box-text{
+    width: 50%;
+    height: 100%;
+    padding: 8rem 3rem;
+    background: rgba(219, 46, 219, 0.726);
+    float: left;
+   
+}
+.middle .rel-box-img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+
+}
+.rel-row::after{
+    content: "";
+    display: block;
+    clear: both;
+
+
+}
+.rel-row1{
+    height: 55vh;
+    margin-top: 10rem;
+}
+.rel-box-text1{
+    width: 50%;
+    height: 100%;
+    padding: 8rem 3rem;
+    background: rgba(219, 46, 219, 0.726);
+    float: right;
+
+}
+.rel-box-img1{
+    width: 50%;
+    height: 100%;
+    float: right;
+
+}
+.middle .rel-box-img1 img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+.rel-row1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ###################### contact styling ###################### */
+.contact{
+    max-width: 80rem;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10rem;
+
+    height: 55vh;
+}
+.contact-img{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.contact .contact-img img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+
+}
+
+
+.contact-text{
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 1rem;
+    background: #fff;
+}
+
+.contact::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact .contact-text i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contact .contact-text h4{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+.contact .contact-text p{
+    text-transform: lowercase;
+    font-weight:500 ;
+}
+
+
+/* ############## Media quaries ################$ */
+
+@media(max-width: 500px){
+    html{
+        font-size: 8px;
+    }
+
+    .navbar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .love .main-box .isk{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 7rem;
+    }
+    .about-row{
+        width: 100%;
+        height: auto;
+    }
+
+    .about .box-img{
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 7rem;
+    
+    }
+    .about .box-text{
+        float: none;
+        display: block;
+        width: 100%;
+        /* height: auto; */
+        text-align: center;
+        margin: 7rem 0;
+    }
+    .counts h1{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .rel-header-content{
+        position: absolute;
+        width: 40%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rel-header-content p{
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+    .rel-row,
+    .rel-row1{
+        width: 100%;
+        height: auto;
+        
+    }
+    .rel-row .rel-box-img,
+    .rel-row .rel-box-text{
+        float: none;
+        width: 100%;
+        text-align: center;
+        
+        
+    }
+    .rel-row1 .rel-box-img1,
+    .rel-row1 .rel-box-text1{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .contact{
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-text,
+    .contact .contact-img{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media (min-width: 501px) and (max-width:768px){
+    html{
+        font-size: 8px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .love .main-box .isk{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 7rem;
+    }
+    .about-row{
+        width: 100%;
+        height: auto;
+    }
+
+    .about .box-img{
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 7rem;
+    
+    }
+    .about .box-text{
+        float: none;
+        display: block;
+        width: 100%;
+        /* height: auto; */
+        text-align: center;
+        margin: 7rem 0;
+    }
+    .counts h1{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .rel-header-content{
+        position: absolute;
+        width: 40%;
+        text-align: center;
+        top: 50%;
+        left: 58%; 
+        transform: translate(-50%, -50%);
+    }
+    .rel-row,
+    .rel-row1{
+        width: 100%;
+        height: auto;
+        
+    }
+    .rel-row .rel-box-img,
+    .rel-row .rel-box-text{
+        float: none;
+        width: 100%;
+        text-align: center;
+        
+        
+    }
+    .rel-row1 .rel-box-img1,
+    .rel-row1 .rel-box-text1{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .contact{
+        width: 100%;
+        height: auto;
+    }
+    .contact .contact-text,
+    .contact .contact-img{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(min-width:769px) and (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(orientation:landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+    .about-header{
+        height: vmax;
+    }
+    .rel-row , .rel-row1{
+        height: 55vmax;
+
+    }
+    .contact{
+        height: 55vmax;
+    }
+}
+
+
+
+
+
